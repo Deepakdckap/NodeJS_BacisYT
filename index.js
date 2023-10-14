@@ -1,8 +1,14 @@
-const { format } = require('date-fns'); 
+const logEvents = require('./logEvents')   // improting the logEvents File in the index.js
+// const express = require("express");  // importing Express into our application
 
-console.log(format(new Date(), 'dd/MM/yyyy\tHH:mm:ss'));
+const EventEmitter = require("events")
 
-// we can use any name 
-const {v4: uuid} = require('uuid')
+class MyEmitter extends EventEmitter {}
 
-console.log(uuid());
+const myEmitter = new MyEmitter();
+
+// this .on() will listern whats the event is
+myEmitter.on('log', (msg) => {
+    logEvents(msg);    // sending the message as a parameter to the logEvents.js file
+});
+myEmitter.emit('log', 'log event emitted'); // we can listern the event by using emit; 

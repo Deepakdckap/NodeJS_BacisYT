@@ -1,0 +1,5 @@
+14/10/2023	11:18:09	39284dbe-aba5-4d96-8665-18a626a30be2	log event emitted
+14/10/2023	11:18:22	65c089ee-d50f-415c-b60a-15fe1ef766b6	log event emitted
+14/10/2023	11:18:29	52585cd3-de60-4c13-8aa8-60b456b1cf36	log event emitted
+14/10/2023	11:18:37	c9545eca-ae19-461c-9a75-1514043570fc	log event emitted
+14/10/2023	11:18:40	9c318f70-bc84-495f-93c0-4117bba493fe	log event emitted
